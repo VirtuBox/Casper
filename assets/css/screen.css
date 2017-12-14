@@ -710,6 +710,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-image {
+    margin: 0 -10vw -165px;
     height: 550px;
     background: var(--lightgrey) center center;
     border-radius: 5px;
@@ -724,6 +725,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 1170px) {
     .post-full-image {
+        margin: 0 -4vw -100px;
         height: 550px;
         border-radius: 0;
     }
