@@ -706,7 +706,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 70px 100px 0;
+    padding: 70px 50px 0;
     min-height: 230px;
     font-family: Georgia, serif;
     font-size: 2.2rem;
@@ -766,7 +766,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 920px;
+    max-width: 1040px;
 }
 
 .post-full-content h1,
