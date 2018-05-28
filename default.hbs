@@ -56,13 +56,9 @@
     {{/if}}
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
+    <script type="text/javascript" src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
+    <script src="{{asset "js/infinitescroll.js"}}"></script>
     {{#if pagination.pages}}
     <script>
         // maxPages is a global variable that is needed to determine
