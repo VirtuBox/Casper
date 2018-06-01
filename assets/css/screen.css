@@ -706,8 +706,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
-    height: 800px;
+    height: 550px;
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 5px;
@@ -715,8 +714,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 @media (max-width: 1170px) {
     .post-full-image {
-        margin: 0 -4vw -100px;
-        height: 600px;
+        height: 550px;
         border-radius: 0;
     }
 }
@@ -730,7 +728,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 70px 100px 0;
+    padding: 70px 50px 0;
     min-height: 230px;
     font-family: Georgia, serif;
     font-size: 2.2rem;
@@ -905,7 +903,8 @@ Usage (In Ghost editor):
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400!important;
-    background: var(--whitegrey);
+    color: #DB2B24;
+    background-color: #FDECF1;
     border-radius: 3px;
 }
 
@@ -926,6 +925,7 @@ Usage (In Ghost editor):
     padding: 0;
     font-size: inherit;
     line-height: inherit;
+    color: #fff;
     background: transparent;
 }
 

@@ -13,6 +13,7 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/railcasts.min.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -28,7 +29,7 @@
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+                <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}} - Hosted by <a href="https://virtubox.net/fr" title="VirtuBox">VirtuBox</a> - Theme based on <a href="https://github.com/VirtuBox/jesuisadmin-casper" title="Casper">Casper</a> </section>
                 <nav class="site-footer-nav">
                     <a href="{{@blog.url}}">Latest Posts</a>
                     {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
@@ -56,13 +57,9 @@
     {{/if}}
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
+    <script type="text/javascript" src="{{asset "js/jquery-3.2.1.min.js"}}"></script>
+    <script src="{{asset "js/infinitescroll.js"}}"></script>
     {{#if pagination.pages}}
     <script>
         // maxPages is a global variable that is needed to determine
@@ -71,6 +68,7 @@
         var maxPages = parseInt('{{pagination.pages}}');
     </script>
     <script src="{{asset "js/infinitescroll.js"}}"></script>
+    <script src="{{asset "js/highlight.min.js"}}"></script>
     {{/if}}
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
