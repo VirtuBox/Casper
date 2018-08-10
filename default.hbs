@@ -63,10 +63,7 @@
     #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it
     needs to be included down here, after jQuery has already loaded. --}} {{{block "scripts"}}} {{!-- Ghost outputs important
     scripts and data with this tag - it should always be the very last thing before the closing body tag --}} {{ghost_foot}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>
-    hljs.initHighlightingOnLoad();
-</script>
+
 </body>
 
 </html>
