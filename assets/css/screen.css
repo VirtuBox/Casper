@@ -710,7 +710,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-image {
-    height: 550px;
+    margin: 0 -10vw -165px;
+    height: 800px;
     background: var(--lightgrey) center center;
     border-radius: 5px;
     overflow: hidden;
@@ -724,7 +725,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 1170px) {
     .post-full-image {
-        height: 550px;
+        margin: 0 -4vw -100px;
+        height: 600px;
         border-radius: 0;
     }
     .post-full-image img {
@@ -741,7 +743,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 70px 50px 0;
+    padding: 70px 100px 0;
     min-height: 230px;
     font-family: Georgia, serif;
     font-size: 2.2rem;
@@ -920,8 +922,7 @@ Usage (In Ghost editor):
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400!important;
-    color: #DB2B24;
-    background-color: #FDECF1;
+    background: var(--whitegrey);
     border-radius: 3px;
 }
 
@@ -946,7 +947,6 @@ Usage (In Ghost editor):
     padding: 0;
     font-size: inherit;
     line-height: inherit;
-    color: #fff;
     background: transparent;
 }
 
